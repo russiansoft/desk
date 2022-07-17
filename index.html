@@ -11,36 +11,93 @@
 				crossorigin="anonymous"></script>
 		<title>Школьные доски</title>
 		<style>
+			@font-face
+			{
+				font-family: "DS Eraser Cyr";
+				src: url("DS Eraser Cyr Font.ttf");
+			}
+			@font-face
+			{
+				font-family: "LC Chalk";
+				src: url("LC Chalk.ttf");
+			}
 			body
 			{
 				padding: 2em;
+				background-color: white;
 			}
 			img
 			{
-				width: 90%;
+				width: 30%;
 				margin: 1em;
-				border: 1ch solid #eee;
-				border-radius: 1ch;
+				border: 2px solid #eee;
+				/* border-radius: 1ch; */
+			}
+			main
+			{
+				background-color: #205020;
+				border-style: solid;
+				border-width: 4em;
+				border-image-width: 4em;
+				border-image-source: url(frame.png);
+				border-image-slice: 100;
+				border-image-repeat: stretch;
+			}
+			*
+			{
+				color: white;
+				font-family: "LC Chalk";
 			}
 		</style>
+		<script>
+			function month(index)
+			{
+				return [ "января", "февраля", "марта",
+				         "апреля", "мая", "июня",
+						 "июля", "августа", "сентября",
+						 "октября", "ноября", "декабря" ][index];
+			}
+			onload = function()
+			{
+				let today = new Date();
+				let text = "" + today.getDate() +
+				           " " + month(today.getMonth()) +
+				           " " + today.getFullYear() + " г.";
+				document.querySelector("#date").innerHTML = text;
+			}
+		</script>
 	</head>
 	<body>
-		<img src="IMG_2813.jpg"/>
-		<img src="IMG_2814.jpg"/>
-		<img src="IMG_2815.jpg"/>
-		<img src="IMG_2817.jpg"/>
-		<img src="IMG_2818.jpg"/>
-		<img src="IMG_2823.jpg"/>
-		<img src="IMG_2824.jpg"/>
-		<img src="IMG_2825.jpg"/>
-		<img src="IMG_2826.jpg"/>
-		<img src="IMG_2827.jpg"/>
-		<img src="IMG_2828.jpg"/>
-		<img src="IMG_2829.jpg"/>
-		<img src="IMG_2830.jpg"/>
-		<img src="IMG_2831.jpg"/>
-		<img src="IMG_2833.jpg"/>
-		<img src="IMG_2837.jpg"/>
-		<img src="IMG_2842.jpg"/>
+		<main>
+			<h3 class="text-center" id="date"></h3>
+			<h2 class="text-center">Классная работа!</h2>
+			<h1>Тема: Школьные доски</h1>
+			<h3>Вопросы:</h3>
+			<ol>
+				<li>Производство</li>
+				<li>Где купить</li>
+				<li>Цены</li>
+				<li>Руководство по монтажу</li>
+				<li>Контакты</li>
+				<li>О нас</li>
+			</ol>
+			<img src="IMG_2813.jpg"/>
+			<img src="IMG_2814.jpg"/>
+			<img src="IMG_2815.jpg"/>
+			<img src="IMG_2817.jpg"/>
+			<img src="IMG_2818.jpg"/>
+			<img src="IMG_2823.jpg"/>
+			<img src="IMG_2824.jpg"/>
+			<img src="IMG_2825.jpg"/>
+			<img src="IMG_2826.jpg"/>
+			<img src="IMG_2827.jpg"/>
+			<img src="IMG_2828.jpg"/>
+			<img src="IMG_2829.jpg"/>
+			<img src="IMG_2830.jpg"/>
+			<img src="IMG_2831.jpg"/>
+			<img src="IMG_2833.jpg"/>
+			<img src="IMG_2837.jpg"/>
+			<img src="IMG_2842.jpg"/>
+		</main>
 	</body>
 </html>
