@@ -11,10 +11,15 @@ body
 }
 img
 {
-	width: 30%;
-	margin: 1em;
+	/* width: 30%; */
+	/* margin: 1em; */
 	border: 2px solid #eee;
-	/* border-radius: 1ch; */
+}
+nav
+{
+	background-image: url(nav.png);
+	background-size: contain;
+	background-repeat: space;
 }
 main
 {
@@ -30,4 +35,8 @@ main
 {
 	color: white;
 	font-family: "LC Chalk";
+}
+p
+{
+	white-space: pre-wrap;
 }
