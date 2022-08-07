@@ -18,8 +18,8 @@ img
 nav
 {
 	background-image: url(nav.png);
-	background-size: contain;
-	background-repeat: space;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 main
 {
@@ -38,5 +38,6 @@ main
 }
 p
 {
+	font-size: 1.2em;
 	white-space: pre-wrap;
 }
