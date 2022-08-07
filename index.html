@@ -10,68 +10,14 @@
 				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 				crossorigin="anonymous"></script>
 		<title>Школьные доски</title>
-		<style>
-			@font-face
-			{
-				font-family: "DS Eraser Cyr";
-				src: url("DS Eraser Cyr Font.ttf");
-			}
-			@font-face
-			{
-				font-family: "LC Chalk";
-				src: url("LC Chalk.ttf");
-			}
-			body
-			{
-				padding: 2em;
-				background-color: white;
-			}
-			img
-			{
-				width: 30%;
-				margin: 1em;
-				border: 2px solid #eee;
-				/* border-radius: 1ch; */
-			}
-			main
-			{
-				background-color: #205020;
-				border-style: solid;
-				border-width: 4em;
-				border-image-width: 4em;
-				border-image-source: url(frame.png);
-				border-image-slice: 100;
-				border-image-repeat: stretch;
-			}
-			*
-			{
-				color: white;
-				font-family: "LC Chalk";
-			}
-		</style>
-		<script>
-			function month(index)
-			{
-				return [ "января", "февраля", "марта",
-				         "апреля", "мая", "июня",
-						 "июля", "августа", "сентября",
-						 "октября", "ноября", "декабря" ][index];
-			}
-			onload = function()
-			{
-				let today = new Date();
-				let text = "" + today.getDate() +
-				           " " + month(today.getMonth()) +
-				           " " + today.getFullYear() + " г.";
-				document.querySelector("#date").innerHTML = text;
-			}
-		</script>
+		<link href="style.css" rel="stylesheet">
+		<script scr="script.js"></script>
 	</head>
 	<body>
 		<main>
 			<h3 class="text-center" id="date"></h3>
 			<h2 class="text-center">Классная работа!</h2>
-			<h1>Тема: Школьные доски</h1>
+			<h1>Тема: ВS - настоящие и достойные</h1>
 			<h3>Вопросы:</h3>
 			<ol>
 				<li>Производство</li>

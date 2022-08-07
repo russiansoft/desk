@@ -1,0 +1,33 @@
+
+@font-face
+{
+	font-family: "LC Chalk";
+	src: url("LC Chalk.ttf");
+}
+body
+{
+	padding: 2em;
+	background-color: white;
+}
+img
+{
+	width: 30%;
+	margin: 1em;
+	border: 2px solid #eee;
+	/* border-radius: 1ch; */
+}
+main
+{
+	background-color: #205020;
+	border-style: solid;
+	border-width: 4em;
+	border-image-width: 4em;
+	border-image-source: url(frame.png);
+	border-image-slice: 100;
+	border-image-repeat: stretch;
+}
+*
+{
+	color: white;
+	font-family: "LC Chalk";
+}
