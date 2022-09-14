@@ -7,169 +7,23 @@
 		<link rel="stylesheet" href="bootstrap-icons.css">
 		<link href="style.css" rel="stylesheet">
 		<script src="bootstrap.bundle.min.js"></script>
-		<script src="script.js"></script>
+		<script src="common.js"></script>
+		<script>
+			onload = async function()
+			{
+				await include("menu.html", "main");
+				await include("main.html", "main");
+				let today = new Date();
+				let text = "" + today.getDate() +
+							" " + month(today.getMonth()) +
+							" " + today.getFullYear() + " г.";
+				document.querySelector("#date").innerHTML = text;
+			}
+		</script>
 		<title>Школьные доски</title>
 	</head>
 	<body>
-		<nav class="container-fluid">
-			<div class="navbar sticky-top">
-				<a class="navbar-brand font-monospace h1 text-white" href="#">BS</a>
-				<div class="nav-item">
-					<i class="bi bi-telephone"></i>
-					<a href="tel:+7916)2986615" class="nav-item font-monospace h4 text-white">8(916)298-66-15</a>
-				</div>
-				<div class="nav-item">
-					<i class="bi bi-envelope"></i>
-					<a href="mailto:wip10@yandex.ru" class="nav-item font-monospace h4 text-white">wip10@yandex.ru</a>
-				</div>
-			</div>
-		</nav>	
-		<p></p>
-		<div class="marker marker-1 font-monospace h2">
-			Производство
-		</div>
-		<div class="marker marker-2 font-monospace h2">
-			Каталог продукции
-		</div>
-		<div class="marker marker-3 font-monospace h2">
-			Как заказать
-		</div>
-		<div class="marker marker-4 font-monospace h2">
-			Оплата и доставка
-		</div>
-		<div class="marker marker-5 font-monospace h2">
-			Контакты
-		</div>
-		<div class="marker marker-6 font-monospace h2">
-			О важном
-		</div>
-		<p></p>
 		<main>
-			<h3 class="text-center" id="date"></h3>
-			<h2 class="text-center mb-5">Классная работа.</h2>
-			<h2>Тема:</h1>
-			<h1 class="text-center mb-5">BoardSchool - настоящие и достойные!</h1>
-			<p>Без чего сегодня невозможно представить лекцию,&nbsp; бизнес-встречу,&nbsp; конференцию ?</p>
-
-			<img class="img img-fluid" src="office.jpg"/>
-			<p class="text-end">Верно,&nbsp; без хорошей доски.</p>
-
-			<p>Вас приветствует компания Board School.</p>
-			<p>Предлагаем Вам уже сегодня приобрести достойную доску от поставщика,&nbsp; непосредственно с производства.</p>
-			<p>Срочно изготовим доску по вашим эксклюзивным размерам. Качество гарантируем. Заменим доску и предложим ремонт при обнаружении брака.</p>
-			<p>АКЦИЯ СЕНТЯБРЯ</p>
-			<p>Доска магнитно-маркерная/меловая одноэлементная 150 см х 100см 3800 р.</p>
-			<p>Доска магнитно-маркерная/меловая трехэлементная 300 см х 100 см 10 400 р.</p>
-			<img class="img img-fluid" src="юлия-1.png"/>
-			<img class="img img-fluid" src="юлия-2.png"/>
-			<img class="img img-fluid" src="юлия-3.png"/>
-			<img class="img img-fluid" src="юлия-4.png"/>
-			<p></p>
-			<p>Почему доски Board School заслуживают особого внимания?</p>
-			<p>+продукт изготавливается вручную из качественных материалов;</p>
-			<p>+износостойкое,антибликовое покрытие;</p>
-			<p>+мега-прочная алюминиевая рамка;</p>
-			<p>+надежное крепление (в комплекте);</p>
-			<p>+эргономичный лоток для маркеров (в комплекте);</p>
-			<p>+незаменимы как в офисе, в аудитории, так и дома;</p>
-			<p>С уважением,&nbsp; компания  Board School</p>
-			<p>ООО «ГК Луч» г.Калуга</p>
-			<p class="font-monospace">boards.school@yandex.ru</p>
-			<p class="font-monospace">тел. 8-989-573-85-94   (Юлия)</p>
-			<p class="font-monospace">WhatsApp 8-968-715-55-29</p>
-
-			<p></p>
-			<p></p>
-			<p>Срочно изготовим магнитно-маркерную,&nbsp; меловую доску по вашим эксклюзивным размерам.</p>
-
-			<p></p>
-			<div class="container">
-				<div class="row">
-					<div class="col col-sm-5">
-						<!-- <img class="img img-fluid" src="sizes.webp"/> -->
-						<img class="img img-fluid" src="IMG_2833.jpg"/><p></p>
-						<img class="img img-fluid" src="IMG_2842.jpg"/><p></p>
-						<img class="img img-fluid" src="IMG_2817.jpg"/><p></p>
-						<img class="img img-fluid" src="IMG_2828.jpg"/><p></p>
-					</div>
-					<div class="col col-sm-7">
-						<p>Почему доски ВS заслуживают особого внимания?</p>
-						<p>+продукт изготавливается вручную из качественных материалов;</p>
-						<p>+износостойкое,&nbsp; антибликовое покрытие;</p>
-						<p>+мега-прочная алюминиевая рамка;</p>
-						<p>+надежное крепление;</p>
-						<p>+эргономичный лоток для маркеров;</p>
-						<p>+незаменимы как в офисе,&nbsp; в аудитории,&nbsp; так и дома;</p>
-						<p>+всегда в наличии классические размеры;</p>
-						<p>+легко и просто заказать;</p>
-					</div>
-				</div>
-			</div>
-
-			<p></p>
-			<p>Есть шанс у каждого уже сегодня приобрести достойную доску от поставщика,&nbsp; непосредственно с производства.</p>
-
-			<div id="carousel" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="IMG_2829.jpg" class="d-block w-100">
-					</div>
-					<div class="carousel-item">
-						<img src="IMG_2814.jpg" class="d-block w-100">
-					</div>
-					<div class="carousel-item">
-						<img src="IMG_2815.jpg" class="d-block w-100">
-					</div>
-					<div class="carousel-item">
-						<!-- <img src="IMG_2813.jpg" class="d-block w-100"> -->
-						<img src="IMG_2837.jpg" class="d-block w-100">
-					</div>
-					<div class="carousel-item">
-						<img src="IMG_2830.jpg" class="d-block w-100">
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Предыдущий</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Следующий</span>
-				</button>
-			</div>
-
-			<p></p>
-			<p>Качество гарантируем.&nbsp; Заменим доску и предложим ремонт при обнаружении брака.</p>
-
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2824.jpg"/></div>
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2823.jpg"/></div>
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2818.jpg"/></div>
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2831.jpg"/></div>
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2825.jpg"/></div>
-					<div class="col-sm-4"><img class="img img-fluid mb-3" src="IMG_2827.jpg"/></div>
-				</div>
-			</div>
-
-			<p></p>
-			<p>Наша команда предлагает:</p>
-			<p># время доставки на выбор с 8.00 до 23.00;</p>
-			<p># популярные размеры по приятным ценам;</p>
-			<p>#специальное предложение для оптовых покупателей- индивидуальная СКИДКА <u>до 1 сентября 2022г.</u></p>
-			<p></p>
-			<p class="mt-5">Не думайте!&nbsp; Оставьте заявку:&nbsp; <a href="mailto:wip10@yandex.ru" class="font-monospace text-white">wip10@yandex.ru</a>
-			</p>
-			<p>Звоните!&nbsp; <a href="tel:+7916)2986615" class="font-monospace text-white">8(916)298 -66 -15</a></p>
-			<p></p>
-			
 		</main>
 	</body>
 </html>

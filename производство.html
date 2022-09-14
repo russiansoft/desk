@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-icons.css">
+		<link href="style.css" rel="stylesheet">
+		<script src="bootstrap.bundle.min.js"></script>
+		<script src="common.js"></script>
+		<script>
+			onload = async function()
+			{
+				await include("menu.html", "main");
+				await template("template", "main");
+			}
+		</script>
+		<title>Школьные доски</title>
+	</head>
+	<body>
+		<main>
+		</main>
+		<template>
+			<h2 class="text-center mb-5">Производство</h2>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2824.jpg"/>
+					</div>
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2823.jpg"/>
+					</div>
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2818.jpg"/>
+					</div>
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2831.jpg"/>
+					</div>
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2825.jpg"/>
+					</div>
+					<div class="col-sm-4">
+						<img class="position-relative top-0 start-50 translate-middle magnet" src="magnet-g.png"/>
+						<img class="img img-fluid mb-3" src="IMG_2827.jpg"/>
+					</div>
+				</div>
+			</div>
+		</template>
+	</body>
+</html>
